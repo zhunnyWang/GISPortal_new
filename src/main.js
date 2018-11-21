@@ -13,6 +13,7 @@ import contentmenu from 'v-contextmenu'
 import 'v-contextmenu/dist/index.css'
 import x2js from 'x2js' //xml数据处理插件
 import layerService from './services/layerGlobal'
+import sheetService from './services/sheetGlobal'
 // import Cesium from 'cesium/Cesium'
 // import 'cesium/Widgets/widgets.css'
 
@@ -21,6 +22,7 @@ Vue.component(Tree.name, Tree)
 Vue.use(iView);
 Vue.use(contentmenu);
 Vue.use(layerService); //全局函数
+Vue.use(sheetService);
 
 Vue.prototype.$http = axios;
 Vue.prototype.$qs = qs;

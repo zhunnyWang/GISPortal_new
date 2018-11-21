@@ -17,17 +17,19 @@
                     <Icon @click.native="collapsedSider" :class="rotateIcon" :style="{margin: '0 20px 0'}" type="md-menu" size="24"></Icon>
                      
                     <div class="logout">
+                        <Dropdown v-bind:style="styleObject" placement="bottom-end" >
+                            <br>
+                            <a href="javascript:void(0)"  @click="openPrimitive">
+                                <Icon type="md-apps" size="24"/>
+                                打开/关闭图幅
+                            </a>
+                        </Dropdown>
                        <Dropdown v-bind:style="styleObject" placement="bottom-end" >
                             <br>
                             <a href="javascript:void(0)"  @click="convert">
                                 <Icon type="md-planet" size="24"/>
                                 2D/3D转换
                             </a>
-                            <!-- <p style="font-size:10px;margin-top:8px">用户:{{this.$rootScope.userid}}第{{this.$rootScope.times}}次登录</p> -->
-                            <!-- <p style="font-size:10px;margin-top:8px">用户:{{userid}}第{{times}}次登录</p> -->
-                            <!-- <br> -->
-                            <!-- <p style="font-size:10px;">上一次登录时间:{{this.$rootScope.date}}</p> -->
-                            <!-- <p style="font-size:10px;">上一次登录时间:{{date}}</p> -->
                         </Dropdown>
                         <Dropdown v-bind:style="styleObject" placement="bottom-end" >
                             <br>
